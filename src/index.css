@@ -2,4 +2,70 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: linear-gradient(#409DB1, #BBE0E8);
+}
+.app {
+    width: 100vw;
+    height: 100vh;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+    margin-top: 40vh;
+    border: 3px white solid;
+    border-radius: 6px;
+    width: 15%;
+    height: 3em;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+}
+
+Link {
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn .8s ease-in;
+}
+
+.name:hover {
+    background-color: white;
+    color: #409DB1;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+}
+
+.my-pic {
+    grid-row: 1 / 6;
+    grid-column: 1 / 2;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid white;
+}
+
+.my-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
